@@ -49,12 +49,13 @@ We will make use of the article accompanying the dataset [here](reference/CRISP-
 
 ## Conclusions
 
-- Due to the heavily unbalanced dataset labels, the model performance is limited. To address this issue, we have chosen the F1 score as the primary performance metric and used AUC to compare the models and make the final selection.
-- All models outperformed the baseline, indicating positive outcomes.
+Due to the heavily unbalanced dataset labels, the model performance is limited. To address this issue, we have chosen the F1 score as the primary performance metric and used AUC to compare the models and make the final selection.
 
-- The Decision Tree Classifier emerges as the best model for customer classification, offering potential to classify on both labels.
+All models outperformed the baseline, indicating positive outcomes.
 
-- The data derived from marketing campaigns appears to lack relevance. Most of the features are not predictive of the outcome. The selected model relying only on the following features:
+The Decision Tree Classifier emerges as the best model for customer classification, offering potential to classify on both labels.
+
+The data derived from marketing campaigns appears to lack relevance. Most of the features are not predictive of the outcome. The selected model relying only on the following features:
   - emp.var.rate
   - cons.conf.idx
   - duration
@@ -75,4 +76,4 @@ In order to improve the model, we could try to gather more information regarding
 
 ### In terms of future campaigns, the bank could consider
 
-- We could also utilize SMOTE to address class imbalance, potentially improving model accuracy. However, we shall monitor for introduction of noise.
+We could also utilize SMOTE to address class imbalance, potentially improving model accuracy. However, we shall monitor for introduction of noise.
